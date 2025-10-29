@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าเว็บพร้อมลิงก์โซเชียลมีเดีย</title>
+    <style>
+        /* สไตล์พื้นฐานของแท็บนำทาง */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000000; /* สีพื้นหลังของแท็บ */
+        }
+
+        .navbar li {
+            float: left; /* จัดเรียงรายการแนวนอน */
+        }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* เปลี่ยนสีเมื่อชี้ (hover) */
+        .navbar li a:hover {
+            background-color: #575757;
+        }
+
+        /* สไตล์สำหรับเนื้อหาหลัก */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .facebook { background-color: #3b5998; } /* สีเฉพาะของ Facebook */
+        .youtube { background-color: #ff0000; } /* สีเฉพาะของ YouTube */
+        .whatsapp { background-color: #25D366; } /* สีเฉพาะของ WhatsApp */
+        .about { background-color: #ff00f2; } /* สีเฉพาะของ about */
+
+    </style>
+</head>
+<body>
+
+    <ul class="navbar">
+        <li><a href="about.html">หน้าหลัก</a></li>
+        <li><a class="facebook" href="https://www.facebook.com/ky0t58biw9?rdid=9YFDweth3IkCCTtf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Axpvrr81a%2F#" target="_blank">Facebook 📘</a></li>
+        <li><a class="youtube" href="https://www.youtube.com/" target="_blank">YouTube ▶️</a></li>
+        <li><a class="whatsapp" href="https://wa.me/8562099194980" target="_blank">WhatsApp 🟢</a></li>
+    <li><a class="about" href="about.html" target="back">about 🟢</a></li>
+    </ul>
+
+    <div
+        <p>ຍິນດີຕອນຮັບສູ່ເວບໄຊຣຂອງພວກເຮົາ</p>
+        <p>คลิกที่แท็บด้านบนเพื่อไปยังแพลตฟอร์มโซเชียลมีเดียต่างๆ</p>
+        <p>ลิงก์จะเปิดในแท็บใหม่</p>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายการสินค้าของเรา</title>
+    <style>
+        /* สไตล์ทั่วไป */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+
+        /* สไตล์สำหรับคอนเทนเนอร์ของสินค้า */
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* ระยะห่างระหว่างสินค้า */
+            flex-wrap: wrap; /* ให้สินค้าขึ้นบรรทัดใหม่เมื่อหน้าจอเล็ก */
+        }
+
+        /* สไตล์สำหรับบัตรสินค้าแต่ละชิ้น */
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* เอฟเฟกต์เมื่อเมาส์ชี้ */
+        .product-card:hover {
+            transform: translateY(-5px); /* ยกบัตรขึ้นเล็กน้อย */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* สไตล์สำหรับลิงก์ */
+        .product-card a {
+            text-decoration: none; /* ลบขีดเส้นใต้ของลิงก์ */
+            color: inherit; /* ใช้สีตัวอักษรเดียวกับบัตร */
+            display: block; /* ทำให้คลิกได้ทั้งบัตร */
+        }
+
+        .product-card h2 {
+            color: #28a745; /* สีเขียวสำหรับชื่อสินค้า */
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-card p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff0000; /* สีแดงสำหรับราคา */
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>สินค้าเด่นของเรา</h1>
+
+    <div class="product-list">
+
+        <div class="product-card">
+            <a href="computer.html" target="_blank">
+                <h2>💻 ຄອມພິວເຕີ ແຕ່ລະລຸ້ນ</h2>
+                <p>คอมพิวเตอร์ประสิทธิภาพสูงเพื่อการทำงานและเล่นเกม</p>
+                <p class="price">฿ 1,250</p>
+                <p>คลิกเพื่อดูรายละเอียด</p>
+            
+            </a>
+        </div>
+
+        <div class="product-card">
+            <a href="battery.html" target="_blank">
+                <h2>🔋 ແບັດເຕີຣີ່ ແຕ່ລະລຸ້ນ</h2>
+                <p>พาวเวอร์แบงค์ความจุ 20,000 mAh ชาร์จเร็ว</p>
+                <p class="price">฿ 1,250</p>
+                <p>คลิกเพื่อดูรายละเอียด</p>
+            </a>
+        </div>
+
+        <div class="product-card">
+            <a href="keyboard.html" target="_blank">
+                <h2>⌨️ ຄີບອດ ແຕ່ລະລຸ້ນ</h2>
+                <p>ปุ่มกดแบบ Blue Switch สำหรับสายเกมเมอร์และนักเขียน</p>
+                <p class="price">฿ 2,890</p>
+                <p>คลิกเพื่อดูรายละเอียด</p>
+            </a>
+        </div>
+<div class="product-card">
+            <a href="computer.html" target="_blank">
+               <h2> 🖨️ ปริ้นเตอร์และอุปกรณ์เสริม</h2>
+                <p>คอมพิวเตอร์ประสิทธิภาพสูงเพื่อการทำงานและเล่นเกม</p>
+                <p class="price">฿ 1,250</p>
+                <p>คลิกเพื่อดูรายละเอียด</p>
+            
+            </a>
+        </div>
+    </div>
+    <body>
+        <p></p>
+    </body>
