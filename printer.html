@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านขายคอมพิวเตอร์ | เลือกซื้อ PC และ Laptop</title>
+    <style>
+        /* สไตล์ทั่วไป */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f7;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+            padding: 20px 0;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        /* คอนเทนเนอร์สินค้าทั้งหมด */
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* จัดเรียงสินค้าหลายบรรทัด */
+            gap: 30px; /* ระยะห่างระหว่างสินค้า */
+            padding: 20px;
+        }
+
+        /* บัตรสินค้าแต่ละชิ้น (Product Card) */
+        .product-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        /* เอฟเฟกต์เมื่อเมาส์ชี้ */
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* รูปภาพสินค้า */
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* ทำให้รูปภาพเต็มพื้นที่โดยไม่ผิดสัดส่วน */
+            border-bottom: 1px solid #f7eded;
+        }
+
+        /* ข้อมูลสินค้า */
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h2 {
+            font-size: 1.4em;
+            color: #28a745;
+            margin: 10px 0;
+        }
+
+        .product-info p {
+            color: #666;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        /* ราคา */
+        .price {
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #dc3545;
+            margin: 10px 0 20px;
+        }
+
+        /* ปุ่มลิงก์รายละเอียด */
+        .detail-link {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0 0 10px 10px; /* ทำให้ปุ่มเต็มความกว้างด้านล่าง */
+            transition: background-color 0.2s;
+        }
+
+        .detail-link:hover {
+            background-color: #ff0202;
+        }
+    </style>
+    <a href="/" class="home-button">กลับสู่หน้าหลัก</a>
+
+<style>
+.home-button {
+  display: inline-block; /* ทำให้กำหนดความกว้าง/ความสูงได้ */
+  padding: 10px 20px;
+  background-color: #007bff; /* สีน้ำเงิน */
+  color: white; /* สีข้อความ */
+  text-align: center;
+  text-decoration: none; /* ลบขีดเส้นใต้ */
+  border-radius: 5px; /* มุมโค้งมน */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s; /* ทำให้เกิดแอนิเมชันเมื่อวางเมาส์ */
+}
+
+.home-button:hover {
+  background-color: #0056b3; /* สีเข้มขึ้นเมื่อวางเมาส์ */
+}
+</style>
+</head>
+<body>
+
+    <h1>🖥️ เลือกซื้อคอมพิวเตอร์ยอดนิยม</h1>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://www.printer-thailand.com/1198-3164-large/epson-ecotank-l11050-a3-ink-tank-printer-4800x1200-dpi-8-ipm.jpg" alt="Laptop รุ่น Ultra Pro">
+            <div class="product-info">
+                <h2>
+EcoTank L11050 A3 Ink Tank Printer</h2>
+                <p>CPU Core i7, RAM 16GB, 512GB SSD</p>
+                <div class="price">15,550,000 KIP</div>
+            </div>
+            <a href="details-laptop-ultra.html" target="_blank" class="detail-link">
+                ดูรายละเอียดและสั่งซื้อ
+            </a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://printer.kalimstores.com/wp-content/uploads/20pum_mgl_black_04_2.jpg.jpg" alt="PC Gaming Xtreme">
+            <div class="product-info">
+                <h2>
+Epson EcoTank L8180 A3+ Ink Tank Photo Printer</h2>
+                <p>CPU Ryzen 7, RTX 4060, 1TB NVMe</p>
+                <div class="price">15,550,000 KIP</div>
+            </div>
+            <a href="details-pc-gaming.html" target="_blank" class="detail-link">
+                ดูรายละเอียดและสั่งซื้อ
+            </a>
+        </div>
+
+        <div class="product-card">
+            <img src="data:image/jpeg;base64,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">
+            <div class="product-info">
+                <h2>Epson EcoTank L5590 Ink Tank Printer</h2>
+                <p>หน้าจอ 27 นิ้ว, เหมาะสำหรับทำงานออฟฟิศ</p>
+                <div class="price">15,550,000 KIP</div>
+            </div>
+            <a href="details-aio-deskview.html" target="_blank" class="detail-link">
+                ดูรายละเอียดและสั่งซื้อ
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
